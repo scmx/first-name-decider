@@ -1,0 +1,8 @@
+.name {
+  padding: 0.6vw;
+  text-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+.full-name {
+  font-size: 7vw;
+}
