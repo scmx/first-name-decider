@@ -3,5 +3,10 @@ function randomName(names) {
 }
 
 export function nameGenerator(names, ...current) {
-  return [randomName(names), randomName(names)];
+  const second = randomName(names);
+  const rest = names.slice();
+  rest.splice(rest.indexOf(second), 1);
+  const third = randomName(rest);
+
+  return [second, third];
 }
