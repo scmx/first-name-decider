@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-export function useGenerated(generator, collection) {
-  const [values, setValues] = useState(() => generator(collection));
+export function useGenerated(generator, ...args) {
+  const [value, setValue] = useState(() => generator(...args));
 
   function next() {
-    setValues(generator(collection, ...values));
+    setValue(generator(...args));
   }
 
-  return [...values, next];
+  return [value, next];
 }

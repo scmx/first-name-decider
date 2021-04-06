@@ -1,5 +1,22 @@
 # first-name-decider
+
 Tool for testing out names
+
+## Usage with query params
+
+https://scmx.github.io/first-name-decider?firstName=A&middleNames=B,C&lastName=D+E
+
+- `middleNames=Rand,Mat,Perrin...` (required)
+- `lastName=Demo+Name`, (required)
+- `firstName=Some`, (optional)
+- `nameCount=2`: (optional)
+
+## Usage examples
+
+[3 random names together with a last name](https://scmx.github.io/first-name-decider?middleNames=Rand,Mat,Perrin,Lan&lastName=Demo+Name)  
+[2 random names together with a last name](https://scmx.github.io/first-name-decider?middleNames=Rand,Mat,Perrin,Lan&lastName=Demo+Name&nameCount=2)  
+[first name plus 2 random names together with a last name](https://scmx.github.io/first-name-decider?firstName=Rand&middleNames=Mat,Perrin,Lan&lastName=Demo+Name)  
+[first name plus 1 random name together with a last name](https://scmx.github.io/first-name-decider?firstName=Rand&middleNames=Mat,Perrin,Lan&lastName=Demo+Name&nameCount=2)
 
 ---
 
